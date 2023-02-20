@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { useNavigate, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 
 export const EditUser02 = () => {
 
@@ -85,6 +85,7 @@ const loadUser = async () => {
           </div>
 
           <button className="btn btn-primary btn-block">Edit User</button>
+          <Link to="/tenant" className="btn btn-primary btn-block">Cancel</Link>
         </form>
       </div>
     </div>
